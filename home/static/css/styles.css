@@ -313,7 +313,7 @@ select {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background-image: url('static/images/down-arrow.png');
+    background-image: url('/static/images/down-arrow.png');
     background-position: 96% 50%;
     background-repeat: no-repeat;
     outline: none;
@@ -765,7 +765,7 @@ input[type='checkbox'] {
 .header {
     padding-top: 8rem;
     padding-bottom: 7.75rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('static/images/header-background.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('/static/images/header-background.jpg') center center no-repeat;
     background-size: cover;
     text-align: center;
 }
@@ -996,7 +996,7 @@ input[type='checkbox'] {
 .basic-1 {
     padding-top: 7.5rem;
     padding-bottom: 8rem;
-    background: url('static/images/video-background.jpg') center center no-repeat;
+    background: url('/static/images/video-background.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -1388,7 +1388,7 @@ input[type='checkbox'] {
 .basic-4 {
     padding-top: 7.75rem;
     padding-bottom: 8.125rem;
-    background: url('static/images/download-background.jpg') center center no-repeat;
+    background: url('/static/images/download-background.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -1507,7 +1507,7 @@ a.back-to-top {
     width: 2.625rem;
     height: 2.625rem;
     border-radius: 1.875rem;
-    background: #5557da url("static/images/up-arrow.png") no-repeat center 47%;
+    background: #5557da url("/static/images/up-arrow.png") no-repeat center 47%;
     background-size: 1.125rem 1.125rem;
     text-indent: -9999px;
 }
