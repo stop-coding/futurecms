@@ -1,0 +1,889 @@
+{% load i18n wagtailcore_tags %}
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Leno is a mobile app landing page template made with HTML and Bootstrap to help you present mobile apps to the online audience and convince visitors to download from the app stores">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Webpage Title -->
+    <title>云匠 - 智慧科技领先企业</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="{% static 'images/favicon.png' %}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="{% static 'images/logo.svg' %}" alt="alternative"></a> 
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="article.html">智慧办公 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="features.html">智慧家庭</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="pricing.html">智慧产品</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="terms.html">全自动智能锁</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">肖邦智能开关</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+				
+                <!-- span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span -->
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1>云匠科技<br>FOR <span id="js-rotating">企业, 家庭, 个人</span></h1>
+                        <p class="p-large">云匠科技 致力于通过不断技术创新将智慧便捷的科技体验带给万千企业、家庭、个人!</p>
+                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>For 智慧家居</a>
+                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>For 智能设备</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="{% static 'images/header-smartphones.png' %}" alt="alternative">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-1 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/testimonial-1.jpg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I just finished my trial period and was so amazed with the support and good results that I purchased Leno.</p>
+                                            <p class="testimonial-author">Jude Thorn - Designer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/testimonial-2.jpg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I don't know how I managed to get work done without Leno. The speed of this application is amazing!</p>
+                                            <p class="testimonial-author">Roy Smith - Developer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/testimonial-3.jpg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">This app has the potential of becoming a mandatory tool in every marketer's day to day operations flow.</p>
+                                            <p class="testimonial-author">Marsha Singer - Marketer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/testimonial-4.jpg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Searching for a great marketing automation app was difficult but thankfully I found Leno.</p>
+                                            <p class="testimonial-author">Tim Shaw - Designer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/testimonial-5.jpg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Leno's support team is amazing. They've helped me with some issues and I am so grateful for their fast response.</p>
+                                            <p class="testimonial-author">Lindsay Spice - Marketer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/testimonial-6.jpg' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Who would have thought that Leno can provide such amazing results in just a few weeks with an easy learning curve.</p>
+                                            <p class="testimonial-author">Ann Blake - Developer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of testimonials -->
+
+
+    <!-- Features -->
+    <div class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">智慧便捷</h2>
+                    <div class="p-heading">Leno was designed based on input from personal development coaches and popular trainers so it offers all required features</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="templateTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>CONFIGURING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>TRACKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>MONITORING</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="templateTabsContent">
+                    
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <ul class="list-unstyled li-space-lg first">
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="far fa-compass fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Goal Setting</h4>
+                                                <p>Like any self improving process, everything starts with setting your goals and committing to them</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-code fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Visual Editor</h4>
+                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your quick notes</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="far fa-gem fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Refined Options</h4>
+                                                <p>Each option packaged in the app's menus is provided in order to improve you personally</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of col -->
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="{% static 'images/features-smartphone-1.png' %}" alt="alternative">
+                                </div> <!-- end of col -->
+                                <!-- end of image pane -->
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-calendar-alt fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Calendar Input</h4>
+                                                <p>Schedule your appointments, meetings and periodical evaluations using the tools</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-book fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Easy Reading</h4>
+                                                <p>Reading focus mode for long form articles, ebooks and other materials with long text</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-cube fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Good Foundation</h4>
+                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for devices</p>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div> <!-- end of col -->
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="{% static 'images/features-smartphone-2.png' %}" alt="alternative">
+                                </div> <!-- end of col -->
+                                <!-- end of image pane -->
+                                
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-lg-8">
+                                    <h3>Track Result Based On Your</h3>
+                                    <p class="sub-heading">After you've configured the app and settled on the data gathering techniques you can start the information trackers and begin collecting those long awaited interesting details.</p>
+                                    <ul class="list-unstyled li-space-lg first">
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-cube fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Good Foundation</h4>
+                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app now</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-book fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Easy Reading</h4>
+                                                <p>Reading focus mode for long form articles, ebooks and other materials with long text</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="far fa-compass fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Goal Setting</h4>
+                                                <p>Like any self improving process, everything starts with setting goals and comiting</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-calendar-alt fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Calendar Input</h4>
+                                                <p>Schedule your appointments, meetings and periodical evaluations using the tools</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-code fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Visual Editor</h4>
+                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="far fa-gem fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Refined Options</h4>
+                                                <p>Each option packaged in the app's menus is provided in order to improve you personally</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of col -->
+                                <!-- end of text and icon cards area -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-lg-8">
+                                    <ul class="list-unstyled li-space-lg first">
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-cube fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Good Foundation</h4>
+                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app today</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-book fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Easy Reading</h4>
+                                                <p>Reading focus mode for long form articles, ebooks and other materials with long text</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="far fa-compass fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Goal Setting</h4>
+                                                <p>Like any self improving process, everything starts with setting your goals and comiting</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-calendar-alt fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Calendar Input</h4>
+                                                <p>Schedule your appointments, meetings and periodical evaluations using the tools</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-code fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Visual Editor</h4>
+                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes</p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="far fa-gem fa-stack-1x"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <h4>Refined Options</h4>
+                                                <p>Each option packaged in the app's menus is provided in order to improve you personally</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <h3>Monitoring Tools Evaluation</h3>
+                                    <p class="sub-heading">Monitor the evolution of your finances and health state using tools integrated in Leno. The generated real time reports can be filtered based on any desired criteria.</p>
+                                </div> <!-- end of col -->
+                                <!-- end of text and icon cards area -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="{% static 'images/features-smartphone-3.png' %}" alt="alternative">
+                                </div> <!-- end of col -->
+                                <!-- end of image pane -->
+                                    
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row --> 
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Video -->
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">安全隐私</h2>
+                    <div class="p-heading">It's time to target the right customers for your business with the help of Leno's patented user tracking and segmentation technology</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                <img class="img-fluid" src="{% static 'images/video-frame.jpg' %}" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
+
+
+    <!-- Details 1 -->
+    <div class="basic-2 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'images/details-1.png' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>云匠科技为您和家人带来不仅仅是科技体验，而是生活</h2>
+                        <p>Leno can easily help you track your personal development evolution if you take the time to properly setup your goals at the beginning of the training process. Check it out</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-1-lightbox">Lightbox</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 1 Lightbox -->
+    <!-- Lightbox -->
+	<div id="details-1-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="{% static 'images/details-1-lightbox.jpg' %}" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div> <!-- end of col -->
+			<div class="col-lg-4">
+                <h3>Goals Setting</h3>
+				<hr>
+                <p>The app can easily help you track your personal development evolution if you take the time to set it up.</p>
+                <h4>User Feedback</h4>
+                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-check"></i><div class="media-body">Splash screen panel</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i><div class="media-body">Statistics graph report</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i><div class="media-body">Events calendar layout</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i><div class="media-body">Location details screen</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i><div class="media-body">Onboarding steps interface</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" href="#header">Download</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+			</div> <!-- end of col -->
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details 1 lightbox -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>科技带给我们不一样的生活方式</h2>
+                        <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease. Just open the feature and start setting your time</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-1-lightbox">Lightbox</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'images/details-2.png' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
+
+
+    <!-- Statistics -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Counter -->
+                    <div id="counter">
+                        <div class="cell">
+                            <i class="fas fa-users"></i>
+                            <div class="counter-value number-count" data-count="231">1</div>
+                            <p class="counter-info p-small">Happy Customers</p>
+                        </div>
+                        <div class="cell">
+                            <i class="fas fa-code green"></i>
+                            <div class="counter-value number-count" data-count="385">1</div>
+                            <p class="counter-info p-small">Good Reviews</p>
+                        </div>
+                        <div class="cell">
+                            <i class="fas fa-cog red"></i>
+                            <div class="counter-value number-count" data-count="159">1</div>
+                            <p class="counter-info p-small">Press Articles</p>
+                        </div>
+                        <div class="cell">
+                            <i class="fas fa-comments yellow"></i>
+                            <div class="counter-value number-count" data-count="127">1</div>
+                            <p class="counter-info p-small">Solved Issues</p>
+                        </div>
+                        <div class="cell">
+                            <i class="fas fa-rocket blue"></i>
+                            <div class="counter-value number-count" data-count="211">1</div>
+                            <p class="counter-info p-small">Future Updates</p>
+                        </div>
+                    </div>
+                    <!-- end of counter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+    <!-- Screenshots -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">简洁设计</h2>
+                    <hr class="hr-heading">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-1.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-1.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-2.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-2.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-3.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-3.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-4.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-4.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-5.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-5.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-6.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-6.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-7.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-7.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-8.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-8.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-9.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-9.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/screenshot-10.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/screenshot-10.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of screenshots -->
+
+
+    <!-- Download -->
+    <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>Download Leno today to see the benefits and enjoy the results faster than any other app out there</h3>
+                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>For iOS</a>
+                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>For Android</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'images/download.png' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of download -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>关于 云匠</h6>
+                        <p class="p-small">Leno is a mobile app HTML Bootstrap landing page template built to help you create great basic websites for apps and grow the user base.</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>了解更多</h6>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
+                            <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
+                            <li>Menu: <a href="article.html">Article</a>, <a href="features.html">Features</a>, <a href="pricing.html">Pricing</a>, <a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <!--span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span -->
+                        <!--span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span -->
+                        <!--span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span -->
+                        <!-- span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span -->
+                        <p class="p-small">We would love to hear from you <a href="mailto:contact@leno.com"><strong>yunjtechlogy@yunj.com</strong></a></p>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a href="https://inovatik.com">All right by yunj</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{% static 'js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{% static 'js/morphext.min.js' %}"></script> <!-- Morphtext rotating text in the header -->
+    <script src="{% static 'js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+</body>
